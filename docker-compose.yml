@@ -29,8 +29,8 @@ services:
       - default
     depends_on:
       - mysql
-  networks:
-    default:
-  # コンテナを削除してもデータが消えないようにする
-  volumes:
-    mysqldata:
+networks:
+  default:
+# コンテナを削除してもデータが消えないようにする
+volumes:
+  mysqldata:
